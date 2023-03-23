@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header">
+    <a href="#" class="logo">Logo</a>
+    <ul class="navigation" >
+        <li> <a href="#" class="active">Home</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#">Events</a></li>
+        <li> <a href="#">Contacts</a></li>
+    </ul>
+  </header> 
+  <section>
+    <h2 id="txt">Hello Winter</h2>
+    <img src="monutain_01.png" id="m1">
+    <img src="monutain_02.png" id="m2">
+    <img src="monutain_03.png" id="m3">
+    <img src="monutain_04.png" id="m4">
+    <img src="trees.png" id="tr">
+    <img src="cable_cars.png" id="crs">
+    <img src="house.png" id="house">
+
+  </section>
+  <div class="sec">
+  <h2>Parallax Scrolling  Website</h2>
+  <p >Winter is the coldest season of the year in polar and temperate climates. It occurs after autumn and before spring. The tilt of Earth's axis causes seasons; winter occurs when a hemisphere is oriented away from the Sun. Different cultures define different dates as the start of winter, and some use a definition based on weather.
+      When it is winter in the Northern Hemisphere, it is summer in the Southern Hemisphere, and vice versa. In many regions, winter brings snow and freezing temperatures. The moment of winter solstice is when the Sun's elevation with respect to the North or South Pole is at its most negative value; that is, the Sun is at its farthest below the horizon as measured from the pole. The day on which this occurs has the shortest day and the longest night, with day length increasing and night length decreasing as the season progresses after the solstice.
+      The earliest sunset and latest sunrise dates outside the polar regions differ from the date of the winter solstice and depend on latitude. They differ due to the variation in the solar day throughout the year caused by the Earth's elliptical orbit (see: earliest and latest sunrise and sunset).<br><br>The tilt of the Earth's axis relative to its orbital plane plays a large role in the formation of weather. The Earth is tilted at an angle of 23.44° to the plane of its orbit, causing different latitudes to directly face the Sun as the Earth moves through its orbit. This variation brings about seasons. When it is winter in the Northern Hemisphere, the Southern Hemisphere faces the Sun more directly and thus experiences warmer temperatures than the Northern Hemisphere. Conversely, winter in the Southern Hemisphere occurs when the Northern Hemisphere is tilted more toward the Sun. From the perspective of an observer on the Earth, the winter Sun has a lower maximum altitude in the sky than the summer Sun.</p>
+</div> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script>
+  gsap.from("#txt",{
+    scrollTrigger :{
+      scrub:true
+    },
+    x:350, 
+  })
+  gsap.from("#m1",{
+    scrollTrigger :{
+      scrub:true
+    },
+    y:100, 
+  })
+  gsap.from("#m2",{
+    scrollTrigger :{
+      scrub:true
+    },
+    y:50, 
+  })
+  gsap.from("#m3",{
+    scrollTrigger :{
+      scrub:true
+    },
+    y:200, 
+  })
+  gsap.from("#m4",{
+    scrollTrigger :{
+      scrub:true
+    },
+    y:150, 
+  })
+  gsap.from("#tr",{
+    scrollTrigger :{
+      scrub:true
+    },
+    y:150, 
+  })
+  gsap.from("#crs",{
+    scrollTrigger :{
+      scrub:true
+    },
+    x:100,
+  })
+  gsap.from("#house",{
+    scrollTrigger :{
+      scrub:true
+    },
+    y:50, 
+  })
+</script>
+</body>
+
+</html>
